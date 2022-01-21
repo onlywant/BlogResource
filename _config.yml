@@ -99,9 +99,10 @@ theme: melody
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@www.mornw.com:/home/admin/blog/repos/blog.git
-  branch: master
+  repo: git@github.com:onlywant/onlywant.github.io.git
+  branch: main
 
+  
 jsonContent:
   meta: false
   pages: false
