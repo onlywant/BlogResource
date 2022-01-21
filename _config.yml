@@ -3,17 +3,18 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
+title: 朝霞换夕阳
+subtitle: 蜉蝣天地，沧海一粟
+description: '记录生活的点滴'
 keywords:
-author: John Doe
-language: en
+author: 朝霞换夕阳
+language: zh-CN
 timezone: ''
 
 # URL
-## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://blog.mornw.com
+root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -50,11 +51,6 @@ highlight:
   tab_replace: ''
   wrap: true
   hljs: false
-prismjs:
-  enable: false
-  preprocess: true
-  line_number: true
-  tab_replace: ''
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -62,7 +58,7 @@ prismjs:
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
   path: ''
-  per_page: 10
+  per_page: 5
   order_by: -date
 
 # Category & Tag
@@ -80,8 +76,8 @@ meta_generator: true
 ## http://momentjs.com/docs/#/displaying/format/
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
-## updated_option supports 'mtime', 'date', 'empty'
-updated_option: 'mtime'
+## Use post's date for updated date unless set in front-matter
+updated_option: false
 
 # Pagination
 ## Set per_page to 0 to disable pagination
@@ -100,8 +96,39 @@ ignore:
 theme: melody
 
 # Deployment
-## Docs: https://hexo.io/docs/one-command-deployment
+## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:onlywant/onlywant.github.io.git
-  branch: main
+  repo: git@www.mornw.com:/home/admin/blog/repos/blog.git
+  branch: master
+
+jsonContent:
+  meta: false
+  pages: false
+  posts:
+    title: true
+    date: true
+    path: true
+    text: false
+    raw: false
+    content: false
+    slug: false
+    updated: false
+    comments: false
+    link: false
+    permalink: false
+    excerpt: false
+    categories: false
+    tags: true
+
+mathjax:
+    enable: true
+
+
+# index2 generator是否包含官方的hexo-generator-index，默认true（包含）
+index2_include_index: true # defult is true
+
+# 配置index2 generator，可以是数组或对象
+index2_generator:
+  exclude:
+    - tag hide # 不包含标签为Hexo的文章
