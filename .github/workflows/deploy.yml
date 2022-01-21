@@ -8,8 +8,6 @@ on:
 env:
   GIT_USER: mornw
   GIT_EMAIL: 1114128406@qq.com
-  THEME_REPO: Molunerfinn/hexo-theme-melody
-  THEME_BRANCH: master
   DEPLOY_REPO: onlywant/onlywant.github.io
   DEPLOY_BRANCH: main 
 
@@ -25,13 +23,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-
-      - name: Checkout theme repo
-        uses: actions/checkout@v2
-        with:
-          repository: ${{ env.THEME_REPO }}
-          ref: ${{ env.THEME_BRANCH }}
-          path: themes/melody
 
       - name: Checkout deploy repo
         uses: actions/checkout@v2
@@ -63,4 +54,4 @@ jobs:
 
       - name: Deploy hexo
         run: |
-          npm run deploy
+          hexo clean && hexo generate && hexo deploy
