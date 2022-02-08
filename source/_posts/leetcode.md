@@ -1,41 +1,56 @@
 ---
-title: leetcode
+title: leetcode刷题日记
 date: 2021-02-02 09:27:58
 tags: 
 	- leetcode
 ---
 
-Leetcode题目。
+- 注意事项
+- 
 
 <!-- more -->
+# `if` 语句中 `nullptr` 和 `！`区别
+```c++
+    if (!p)
+    # equals;
+    if (p == nullptr)
+```
 
-## 70  [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)
+# 懒惰标记
+```c++
+// 记录动作，而不真正的执行。
+// bitset的翻转操作
+class bitset{
+    int flips;
+    bitset() {
+        flips = false;
+    }
+    void flip() {
+        flips ^= 1;
+    }
+};
+```
 
-1. 第一版：使用深度优先搜索，超时
+# 异或 1 取反
+```c++
+    x ^= 1;
+```
 
-   ```go
-   var res int
-   func climbStairs(n int) int {
-       res = 0
-       backTrack(0, n)
-       return res
-   }
-   func backTrack(cur int, n int){
-       if cur == n {
-           res++
-       }else if cur > n{
-           return
-       }else{
-           backTrack(cur+1, n)
-           backTrack(cur+2, n)
-       }
-   }
-   ```
+# 前后缀分解 + dp
+```c++
+    // 一般有三种操作，前、后和其他，都可以分解前后缀。
+    // leetcode 6003
+```
 
-3. 第二版：使用动态规划，$ f(x+2) = f(x)+ f(x+1) $ 
+# 线段树
+```c++
 
-## 121 [买卖股票的最佳时机](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/)
+```
 
-1. 动态规划。
-
-   求数组中两个数的差值最大。令 $f(i)$ 表示以第 $i$ 天的价格卖出获得的最大利润，即 $f(i)=max(p[i]-(p[i-1]-f[i-1]),0)$ 。
+# 自定义hash函数， 参数必须加const
+```c++
+auto hash_p = [&](pair<int, int> &p) -> size_t{
+    static hash<long long> hash_ll;
+    return hash_ll((static_cast<long long>(p.first) << 32) + p.second);
+};
+```

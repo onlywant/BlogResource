@@ -25,7 +25,7 @@ menu:
 
 # Favicon
 # ---------------
-favicon: /melody-favicon.ico
+favicon: 
 
 # PWA
 # See https://github.com/JLHwung/hexo-offline
@@ -131,7 +131,7 @@ cdn:
 # ---------------
 avatar: http://gss0.baidu.com/-Po3dSag_xI4khGko9WTAnF6hhy/zhidao/pic/item/5ab5c9ea15ce36d3669f29963df33a87e850b1f9.jpg
 
-top_img: true # false or url of img
+top_img: https://w.wallhaven.cc/full/g7/wallhaven-g75r7d.jpg # false or url of img
 
 top_img_height: 60 # best range: 60 - 100
 
