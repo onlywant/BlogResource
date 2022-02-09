@@ -54,6 +54,6 @@ hexo d -g
 添加 `<!-- more -->` 可替换成阅读更多。
 
 ## 添加图片
-![test](../images/hexo_write/test.jpg)
+![test](images/hexo_write/test.jpg)
 
 
