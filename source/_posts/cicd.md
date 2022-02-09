@@ -16,8 +16,8 @@ tags:
 # key用来做什么？
 
 > 源代码仓库需要向执行仓库推送改变，那么执行仓库识别源代码仓库就需要 ssh-key 公私钥判定。
-![source](pri_key.png)
-![source](pub_key.png)
+{% asset_img pri_key.png %}
+{% asset_img pub_key.png %}
 
 # deploy.yml 流程
 > 1. 在源代码仓库中监控 push 行为，如果监控到 push，则进行项目编译
