@@ -7,41 +7,8 @@ tags:
 top: 1
 ---
 
-该文记录博客的常用写法。
 
 <!-- more -->
-## 命令及作用
-
-1. 创建新文章
-
-``` bash
-hexo new "My New Post"
-```
-
-2. 运行服务端
-
-``` bash
-hexo server
-```
-
-3. 生成静态文件
-
-``` bash
-hexo generate
-```
-
-4. 推送到远端站点
-
-``` bash
-hexo deploy
-```
-
-5. 增量更新
-
-``` bash
-hexo d -g
-```
-
 
 ## 写作技巧
 1.  为特定的文章配置特定的顶部图
@@ -54,6 +21,4 @@ hexo d -g
 添加 `<!-- more -->` 可替换成阅读更多。
 
 ## 添加图片
-![test](hexo_write/test.jpg)
-
-
+> 设置 `.config.yml` 中的 `post_asset_folder: true`，这样设置后使用 `hexo n ""` 的时候会创建同名文件夹，将图片放在同名文件夹中，在文章中使用相对路径即可。
