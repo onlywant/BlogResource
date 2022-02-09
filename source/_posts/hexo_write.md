@@ -4,7 +4,6 @@ date: 2020-06-16 12:32:11
 tags: 
 	- hexo 
 	- 标准
-top_img: timg.jpg
 top: 1
 ---
 
@@ -53,5 +52,8 @@ hexo d -g
 
 3. 节选
 添加 `<!-- more -->` 可替换成阅读更多。
+
+## 添加图片
+![test](../images/hexo_write/test.jpg)
 
 
