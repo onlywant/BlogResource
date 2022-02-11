@@ -3,9 +3,11 @@ title: leetcode刷题日记
 date: 2022-02-01 09:27:58
 tags: 
 	- leetcode
+categories:
+	- 实习
 ---
 
-刷题遇到的坑
+不断学习，不断进步
 
 <!-- more -->
 # `if` 语句中 `nullptr` 和 `！`区别
@@ -53,3 +55,5 @@ auto hash_p = [&](pair<int, int> &p) -> size_t{
     return hash_ll((static_cast<long long>(p.first) << 32) + p.second);
 };
 ```
+
+# 动态规划什么时候
