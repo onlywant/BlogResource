@@ -1,6 +1,7 @@
 ---
 title: 博客启动！
 date: 2021-06-16 12:32:11
+top: 999
 tags: 
 	- hexo
 categories:
