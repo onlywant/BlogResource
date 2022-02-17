@@ -49,7 +49,7 @@ jobs:
           git config --global user.name $GIT_USER
           git config --global user.email $GIT_EMAIL
           cp _config.chic.yml themes/Chic/_config.yml
-          cp title.ico themes/Chic/source/title.co
+          cp title.ico themes/Chic/source/title.ico
           cp avatar.jpg themes/Chic/source/image/avatar.jpg
 
       - name: Install dependencies
