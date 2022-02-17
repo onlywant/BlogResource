@@ -10,7 +10,8 @@ env:
   GIT_EMAIL: 1114128406@qq.com
   DEPLOY_REPO: onlywant/onlywant.github.io
   DEPLOY_BRANCH: main 
-
+  THEME_REPO: Siricee/hexo-theme-Chic
+  THEME_BRANCH: master
 jobs:
   build:
     name: Build on node ${{ matrix.node_version }} and ${{ matrix.os }}
@@ -47,6 +48,9 @@ jobs:
           ssh-keyscan github.com >> ~/.ssh/known_hosts
           git config --global user.name $GIT_USER
           git config --global user.email $GIT_EMAIL
+          cp _config.chic.yml themes/Chic/_config.yml
+          cp title.ico themes/Chic/title.co
+          cp avatar.jpg themes/Chic/image/avatar.jpg
 
       - name: Install dependencies
         run: |

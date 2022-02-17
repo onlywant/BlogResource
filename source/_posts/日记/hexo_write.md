@@ -30,7 +30,7 @@ blog.mornw.com!
 
 想写博客，当然是先搭建图床啦！
 
-### 1. 图床
+## 1. 图床
 
 1. 在 github 上创建一个公开的图床仓库。
 
@@ -41,7 +41,7 @@ blog.mornw.com!
   - 设置 CDN 加速
  ![](https://cdn.jsdelivr.net/gh/onlywant/blog_img/img/hexo_write/20220211153922.png)
 
-### 2. 安装 hexo + hexo-theme-melody
+## 2. 安装 hexo + hexo-theme-melody
 
 1. 在 github 上创建一个 github pages。
  比如我的是： onlywant.github.io
@@ -62,7 +62,7 @@ blog.mornw.com!
 
 	- 即可使用`hexo -d`推送到远端。
 
-### 3. 使用github actions自动编译发布网站
+## 3. 使用github actions自动编译发布网站
 1. 在 github 上创建 blog 源代码仓库，上传自己的源代码。
 ![](https://cdn.jsdelivr.net/gh/onlywant/blog_img/img/hexo_write/20220211155536.png)
 
