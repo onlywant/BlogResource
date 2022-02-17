@@ -10,14 +10,14 @@ categories:
 不断学习，不断进步
 
 <!-- more -->
-# `if` 语句中 `nullptr` 和 `！`区别
+## `if` 语句中 `nullptr` 和 `！`区别
 ```c++
     if (!p)
-    # equals;
+    ## equals;
     if (p == nullptr)
 ```
 
-# 懒惰标记
+## 懒惰标记
 ```c++
 // 记录动作，而不真正的执行。
 // bitset的翻转操作
@@ -32,23 +32,23 @@ class bitset{
 };
 ```
 
-# 异或 1 取反
+## 异或 1 取反
 ```c++
     x ^= 1;
 ```
 
-# 前后缀分解 + dp
+## 前后缀分解 + dp
 ```c++
     // 一般有三种操作，前、后和其他，都可以分解前后缀。
     // leetcode 6003
 ```
 
-# 线段树
+## 线段树
 ```c++
 
 ```
 
-# 自定义hash函数， 参数必须加const
+## 自定义hash函数， 参数必须加const
 ```c++
 auto hash_p = [&](pair<int, int> &p) -> size_t{
     static hash<long long> hash_ll;
@@ -56,4 +56,12 @@ auto hash_p = [&](pair<int, int> &p) -> size_t{
 };
 ```
 
-# 动态规划什么时候
+## 动态规划什么时候
+
+## 写完程序之后样例怎么设置
+一定要测数组元素数量的边界：0, 1, 2, 4;
+
+---
+
+## 让一个数的最后一个为1的二进制位变成零
+n & (n - 1)
