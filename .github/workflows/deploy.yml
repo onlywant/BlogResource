@@ -25,6 +25,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      - name: Checkout theme repo
+        uses: actions/checkout@v2
+        with:
+          repository: ${{ env.THEME_REPO }}
+          ref: ${{ env.THEME_BRANCH }}
+          path: themes/chic
+
       - name: Checkout deploy repo
         uses: actions/checkout@v2
         with:
@@ -48,7 +55,9 @@ jobs:
           ssh-keyscan github.com >> ~/.ssh/known_hosts
           git config --global user.name $GIT_USER
           git config --global user.email $GIT_EMAIL
-          cp _config.chic.yml themes/Chic/_config.yml
+          cp _config.chic.yml themes/chic/_config.yml
+          cp title.ico themes/chic/source/title.ico
+          cp avatar.jpg themes/chic/source/image/avatar.jpg
 
       - name: Install dependencies
         run: |
