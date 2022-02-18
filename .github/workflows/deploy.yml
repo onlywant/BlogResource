@@ -56,6 +56,9 @@ jobs:
           git config --global user.name $GIT_USER
           git config --global user.email $GIT_EMAIL
           cp _config.chic.yml themes/chic/_config.yml
+          cp title.ico themes/chic/source/title.ico
+          cp avatar.jpg themes/chic/source/image/avatar.jpg
+          cp font.styl themes/chic/source/css/font.styl
 
       - name: Install dependencies
         run: |
