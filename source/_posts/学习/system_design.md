@@ -1,10 +1,10 @@
 ---
-title: system_design
+title: 系统设计
 date: 2022-02-18 12:59:23
 tags: 
 	- 系统设计
 categories:
-	- 实习
+	- 后端
 ---
 
 # 优秀的软件架构

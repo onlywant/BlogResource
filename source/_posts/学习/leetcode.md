@@ -1,11 +1,11 @@
 ---
-title: leetcode刷题日记
+title: 力扣刷题小技巧
 date: 2022-02-01 09:27:58
 top: 2
 tags: 
-	- leetcode
+	- 力扣
 categories:
-	- 实习
+	- 思维
 ---
 
 不断学习，不断进步。
