@@ -7,6 +7,10 @@ categories:
 	- 后端
 ---
 
+[参考](http://c.biancheng.net/view/8375.html)
+[参考github](https://github.com/donnemartin/system-design-primer/blob/master/README-zh-Hans.md#%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%BC%95)
+[菜鸟](https://www.runoob.com/design-pattern/singleton-pattern.html)
+
 # 优秀的软件架构
 ## 代码复用
 无论是开发哪种软件产品，成本和时间都是最重要的。
